@@ -13,4 +13,4 @@ Technologies used will include Weaviate(built in AI and machine learning integra
 # Day One: I have no idea what I am doing!  
 The project I am trying to follow isn't very beginner friendly, so I am doing a lot of research via notebook LM and youtube videos to figure out a list of things.  
 - First I made a weaviate account and collected both the api key and the URL.
-- Next I got an API key from Open API.
+- Next I got an API key from Open AP.
