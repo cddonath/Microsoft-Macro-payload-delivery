@@ -5,10 +5,8 @@ By following the steps outlined in this project, readers will gain insight into:
   
 How attackers craft and deliver malicious payloads using social engineering.  
 How Microsoft Office macros can be exploited for code execution.  
-Techniques for detecting and mitigating macro-based malware threats in enterprise environments.   
-Data (like text from Magic cards) is transformed into these vectors using a process involving tokenization (splitting text into smaller units) and embedding (converting tokens into numerical representations using pre-trained models)    
-When you query, the same vectorization process is applied to your query, and the resulting query vector is compared to the vectors in the database to find the most similar ones.      
-Technologies used will include Weaviate(built in AI and machine learning integration), OpenAI, python, node.js and next.js    
+Techniques for detecting and mitigating macro-based malware threats in enterprise environments.        
+Technologies used will include Weaviate(built in AI and machine learning integration), OpenAI, proxmox, kali and windows, microsoft word    
 
 # Day One: Topic 
 After adding Ben to the group a little later into the semester, I opened up the Idea to doing a project that was little more realistic for our group to complete. I really just used AI and the project prompt to get some suggestions. Ultimately went with the subject explained above. Also used AI to create an outline of each members responsibilities by giving it our topic, timeline and number of memebers.
